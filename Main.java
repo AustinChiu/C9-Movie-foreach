@@ -28,9 +28,19 @@ public class Main
         Movie spider    = new Movie("Spider-Man: Into the Spider-Verse", "Indy", 8.4, 2019);
 
         Movie[] mA = {moana, frozen, bh6, spirit, howel, ponyo, marnie, april, kubo, anastasia, spider};
+        for(Movie i:mA){
+            System.out.println(i.getName());
+        }
         Movie[][] mB = { {moana, frozen, bh6}, {spirit, howel, ponyo, marnie}, { april, kubo, anastasia, spider}};
+        for(Movie [] m1:mB){
+           for(Movie m:m1){
+              System.out.println(m.getName());}
+            }
         ArrayList<Movie> mC = new ArrayList<Movie>( Arrays.asList(mA));
+        for(Movie c:mC){
+            System.out.println(c.getName());
+        }
+// END psvm
         
-    }// END psvm
-        
-} // END class Main
+} 
+}// END class Main
